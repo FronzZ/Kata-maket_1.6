@@ -1,3 +1,5 @@
+https://fronzz.github.io/Kata-maket_1.6/
+
 # Webpack Static Site Starter Kit
 
 ## Требования к проекту
