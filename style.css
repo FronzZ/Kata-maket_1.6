@@ -384,7 +384,7 @@ body {
   padding: 16px; }
 
 .brand-repair__link {
-  background: url("/src/img/Buttons/go.svg");
+  background: url(./static/go.svg);
   width: 40px;
   height: 40px; }
 
@@ -642,7 +642,7 @@ body {
 
 .prices-info__button-text::after {
   content: "";
-  background-image: url("/src/img/Buttons/more.svg");
+  background-image: url(./static/more.svg);
   width: 24px;
   height: 27.491px;
   display: inline-block;
@@ -786,7 +786,7 @@ body {
   width: 4px;
   height: 32px;
   margin-right: 20px;
-  background-image: url("/src/img/SlideMenu/highlight.svg"); }
+  background-image: url(./static/highlight.svg); }
 
 .menu-side-main__item--active {
   color: #7E7E82; }
@@ -901,7 +901,7 @@ body {
 
 .callback__title::before {
   content: '';
-  background-image: url("/src/img/Buttons/highlight.svg");
+  background-image: url(./static/highlight.svg);
   width: 4px;
   height: 40px;
   position: absolute;
@@ -1010,7 +1010,7 @@ body {
 
 .feedback__title::before {
   content: '';
-  background-image: url("/src/img/Buttons/highlight.svg");
+  background-image: url(./static/highlight.svg);
   width: 4px;
   height: 40px;
   position: absolute;
