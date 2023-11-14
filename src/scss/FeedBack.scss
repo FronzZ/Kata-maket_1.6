@@ -1,0 +1,141 @@
+
+
+/*                     Отсюда начинается код!                    */
+
+.feedback {
+    width: 100vw;
+    height: 100vh;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    right: 0;
+
+    border: 1px solid $color-wbgreen;
+    border-radius: 1px;
+
+    transition: width 1s, transform 2s;
+    transform: translateX(130%);
+
+    background-color: $color-white;
+}
+
+.feedback-translate {
+    transform: translateX(0%);
+    }
+
+.feedback__close-btn {
+    margin-right: auto;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.feedback__title {
+    display: flex;
+    align-items: center;
+
+    font-family: 'TT Lakes Bold', sans-serif; 
+    color: $color-black;
+
+    font-size: 24px;
+    line-height: 32px; 
+    letter-spacing: -0.6px;
+    margin-bottom: 24px;
+}
+
+.feedback__title::before {
+    content: '';
+    background-image: url("../img/Buttons/highlight.svg");
+    background-color: #41F6D7;
+    border-radius: 0 10px 10px 0;
+    width: 4px; 
+    height: 40px;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+}
+
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.feedback__form-name,
+.feedback__form-phone,
+.feedback__form-email,
+.feedback__form-text {
+    width: 100%;
+    font-family: 'TT Lakes Medium', sans-serif;
+    color: $color-bgForm; 
+    font-size: 16px; 
+    line-height: 24px;
+    letter-spacing: -0.2px; 
+    border-radius: 8px;
+    border: 1px solid $color-wgrey;
+    padding: 12px 16px;
+}
+
+.feedback__agreement {
+    font-family: 'TT Lakes Medium', sans-serif;
+    color: $color-grey; 
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 19px;
+}
+
+.feedback__agreement span {
+    color: $color-pink; 
+}
+
+.feedback__send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 136px;
+    height: 32px;
+    background: $color-pink;
+    border-radius: 16px;
+    margin-left: auto;
+}
+
+.feedback__send-btn:hover {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.feedback__send-btn-text {
+    font-family: 'TT Lakes Bold', sans-serif; 
+    color: $color-white;
+    font-size: 12px;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase; 
+}
+
+@media(min-width: 400px) {
+    .feedback {
+       width: 320px;
+   }
+}
+
+@media(min-width: 1230px) {
+
+    .feedback {
+        width: 440px;
+        padding: 45px 32px;
+    }
+
+    .feedback__close-btn {
+        position: absolute;
+        left: -65px;
+        top: 40px;
+        
+    }
+}

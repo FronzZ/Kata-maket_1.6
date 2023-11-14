@@ -1,0 +1,324 @@
+/*   Header   /   Стили для xs устройств    */
+
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17.59px;
+  padding-bottom: 17.59px;
+  border-bottom: 1px solid $color-wbgreen;
+  background: $color-white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 16.73px;
+  padding-left: 16px;
+  /*border: 1px solid red;*/
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16.73px;
+  padding-left: 16px;
+  padding-right: 16px;
+  /*border: 1px solid green;*/
+}
+
+.nav-left__item,
+.nav-right__item {
+  background: $color-white;
+}
+
+
+/*   Заголовок и кнопки оставить заявку и статус   */
+
+.main-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.right-section,
+.left-section {
+ display: flex;
+ /* border: 1px solid blue; */
+}
+
+.right-section__item,
+.left-section__item {
+ /* border: 1px solid green; */
+ display: flex;
+ align-items: center;
+ margin-top: 24px;
+ margin-bottom: 24px;
+ margin-right: 16px;
+ background: $color-background;
+}
+
+.left-section__item__title {
+  font-family: "TT Lakes Bold", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: $color-black;
+  margin-left: 12px;
+}
+
+.right-section__item-text {
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $color-black;
+}
+
+.right-section__item {
+  gap: 8px;
+}
+
+.right-section__item:first-child {
+  margin-right: 32px;
+}
+
+.nav-left__item:nth-child(2),
+.nav-right__item:nth-child(1),
+.nav-right__item:nth-child(2),
+.nav-right__item:nth-child(3),
+.right-section {
+  display: none;
+}
+
+/*   Здесь буду писать код для слайдера  */
+
+.navigation-main {
+  padding-bottom: 24px;
+}
+
+.main-nav {
+  display: flex;
+  overflow-x: auto; 
+  white-space: nowrap;
+  align-items: center;
+  // justify-content: space-between;  Убрал, т.к не надо тестить.
+
+  gap: 2px;
+  /* border: 1px solid orange; */
+  padding-left: 16px;
+}
+
+.main-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.main-nav__ltem {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  color: $color-grey;
+  font-family: "TT Lakes Medium", sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.2px; 
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px 9.3px 8px 16.54px;
+}
+
+
+.main-nav__ltem:hover:not(:first-child) {
+  border: 2px solid $color-wgreen;
+  background: $color-white; 
+}
+
+.main-nav__ltem:first-child {
+  border: 2px solid $color-wgreen;
+  background: $color-white; 
+}
+
+/*     ***********************   */
+
+.info__container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  margin-bottom: 24px;
+}
+
+.info__about {
+  padding: 0 16px 16px;
+}
+
+.info__about,
+.info__logo {
+  width: 100%;
+}
+
+.info__about-text {
+  height: 140px;
+  overflow: hidden;
+  font-family: "TT Lakes Regular", sans-serif;
+  color: $color-black;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.info__logo img {
+  width: 100%;
+  height: auto;
+}
+
+
+// .info__about-text-hidden-xs {
+//   display: none;
+//   margin-top: 15px;
+// }
+
+.info__button {
+  /* border: 1px solid salmon; */
+  background: $color-background;
+  margin-top: 16px;
+}
+
+.info__button-text {
+  font-size: 16px;
+  font-family: "TT Lakes Medium", sans-serif;
+  color: $color-black;
+  line-height: 24px;
+  letter-spacing: -0.2px; 
+}
+
+
+/*   Стили для устройств с шириной viewport >768px   */
+
+@media (min-width: 768px) {
+.nav-left__item:nth-child(2),
+.nav-right__item:nth-child(1),
+.nav-right__item:nth-child(2),
+.nav-right__item:nth-child(3) {
+      display: block;
+  }
+
+.nav-left {
+  padding-left: 24px;
+  gap: 20px;
+}
+
+.nav-right {
+  padding-right: 24px;
+}
+
+.nav-right__item:nth-child(4) {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.left-section__item__title {
+  margin-left: 20px;
+}
+
+.left-section__item {
+  margin-bottom: 32px;
+}
+
+.navigation-main {
+  padding-bottom: 32px;
+}
+
+.main-nav {
+  padding-left: 24px;
+}
+
+.info__about,
+.info__logo {
+  width: calc(50% - 16px);
+}
+
+.info__about {
+  padding-left: 24px;
+}
+
+.info__logo {
+  padding-right: 24px;
+}
+
+.info__about-text {
+  line-height: 20px;
+}
+
+// .info__about-text-hidden-xs {
+//   display: block;
+// }
+
+// .info__about-text-hidden-md {
+//   display: none;
+// }
+
+.info__button {
+  margin-top: 10px;
+}
+
+}
+
+/*   Стили для устройств с шириной viewport >1120px   */
+
+@media (min-width: 1120px) {
+  
+
+  .navigation-header {
+      border-bottom: none;
+      display: none;
+  }
+
+  .right-section {
+      display: flex;
+  }
+
+  .left-section__item__title {
+      margin-left: 30px;
+  }
+
+  .left-section__item,
+  .right-section__item {
+      margin-top: 42px;
+      margin-bottom: 8.37px;
+  }
+
+  .right-section__item {
+      margin-right: 32px;
+  }
+
+  .navigation-main {
+      padding-bottom: 12.22px;
+  }
+
+  .main-nav {
+      flex-wrap: wrap;
+      padding-left: 32px;
+      padding-right: 32px;
+  }
+
+  .main-nav__ltem {
+      padding: 8px 16px 8px 16px;
+  }
+
+  .info__about {
+      padding: 0 4px 13px 34px;
+  }
+
+  .info__logo {
+      padding-right: 28.65px;
+  }
+
+  // .info__about-text-hidden-md {
+  //     display: inline;
+  // }
+
+  .info__button {
+      margin-top: 14px;
+  }
+
+}

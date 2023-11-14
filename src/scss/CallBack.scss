@@ -1,0 +1,137 @@
+
+.callback {
+    width: 100vw; 
+    height: 100vh;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    z-index: 6;
+    top:0;
+    right: 0;
+
+    border: 1px solid $color-wbgreen;
+    border-radius: 1px;
+
+    transition: width 1s, transform 2s;
+    transform: translateX(130%);
+
+    background-color: $color-white;
+}
+
+.callback-translate {
+    transform: translateX(0%);
+}
+
+.callback__close-btn {
+    margin-right: auto;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.callback__title {
+    display: flex;
+    align-items: center;
+
+    font-family: 'TT Lakes Bold', sans-serif; 
+    color: $color-black;
+
+    font-size: 24px;
+    line-height: 32px; 
+    letter-spacing: -0.6px;
+    margin-bottom: 24px;
+}
+
+.callback__title::before {
+    content: '';
+    background-image: url("../img/Buttons/highlight.svg");
+    background-color: #41F6D7;
+    border-radius: 0 10px 10px 0;
+    width: 4px; 
+    height: 40px;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+}
+
+.callback__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.callback__form-phone {
+    width: 100%;
+    font-family: 'TT Lakes Medium', sans-serif;
+    color: $color-bgForm;
+    font-size: 16px; 
+    line-height: 24px;
+    letter-spacing: -0.2px; 
+    border-radius: 8px;
+    border: 1px solid $color-wgrey;
+    padding: 12px 16px;
+}
+
+.callback__agreement {
+    font-family: 'TT Lakes Medium', sans-serif;
+    color: $color-grey; 
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 19px;
+}
+
+.callback__agreement span {
+    color: $color-pink; 
+}
+
+.callback__send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 136px;
+    height: 32px;
+    background: $color-pink;
+    border-radius: 16px;
+    margin-left: auto;
+}
+
+.callback__send-btn:hover {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.callback__send-btn-text {
+    font-family: 'TT Lakes Bold', sans-serif; 
+    color: $color-white; 
+    font-size: 12px;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase; 
+}
+
+
+@media(min-width: 400px) {
+     .callback {
+        width: 320px;
+    }
+}
+
+@media(min-width: 1230px) {
+
+
+    .callback {
+        width: 440px;
+        padding: 45px 32px;
+    }
+
+    .callback__close-btn {
+        position: absolute;
+        left: -65px;
+        top: 40px;
+        
+    }
+}

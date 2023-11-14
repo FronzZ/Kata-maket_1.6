@@ -1,0 +1,242 @@
+.prices-block {
+    margin-top: 24px;
+    padding: 16px;
+    background: linear-gradient(to right, $color-background 0%, $color-white 98.61%);
+    border-top: 1px solid $color-wbgreen;
+  }
+  
+  .prices-block__title {
+    text-transform: uppercase;
+    color: $color-grey;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px; 
+  }
+
+  .prices-services__slides {
+    padding: 0 16px;
+    margin-top: 16px;
+    box-sizing: border-box;
+}
+
+.prices-services__slide {
+    min-width: 260px;
+    height: 200px;
+    border-radius: 6px;
+    border: 1px solid $color-wgrey;
+    background: $color-white;
+    padding: 16px;
+}
+
+.prices-services__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.prices-services__time-and-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-services__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 119px;
+    height: 32px;
+    background: $color-pink;
+    border-radius: 16px;
+}
+
+.prices-services__button:hover {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+
+.prices-services__title {
+    font-family: 'TT Lakes Regular', sans-serif;
+    color: $color-grey;
+    line-height: 16px; 
+}
+
+.prices-services__title--highlighted {
+    font-family: 'TT Lakes Bold', sans-serif; 
+    color: $color-white; 
+    font-size: 12px;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase; 
+}
+
+.prices-services__text {
+    color: $color-black;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.2px; 
+}
+
+.prices-services__content--title-hidden-block-xs {
+    display: none;
+}
+
+.prices-info {
+    padding: 16px 16px 50px 16px;
+    border-bottom: 1px solid $color-wbgreen;
+}
+
+.prices-info__description-wrapper {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.prices-info__description {
+    display: flex;
+}
+
+.prices-info__description-text {
+    font-family: 'TT Lakes Regular', sans-serif;
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    color: $color-black;
+}
+
+.prices-info__button {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: inherit;
+}
+
+.prices-info__button-text {
+    font-family: 'TT Lakes Medium', sans-serif;
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+}
+
+.prices-info__button-text::after {
+    content: "";
+    background-image: url("../img/Buttons/more.svg");
+    width: 24px;
+    height: 27.491px;
+    display: inline-block;
+    transform: translateY(10px);
+}
+
+
+/* -------------------------FOOTER--------------------------- */
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.footer__info-text {
+    font-family: 'TT Lakes Medium', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-grey;
+    text-align: center;
+}
+
+
+
+/*     MEDIA 768px     */
+
+@media (min-width: 768px) {
+
+
+
+    .prices-services__content--title-hidden-block-xs {
+        display: flex;
+    }
+
+    .prices-block__title {
+        padding: 0 16px 0 24px;
+    }
+
+    .prices-services__slides {
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px;
+    }
+
+    .prices-services__slide {
+        height: auto;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .prices-services__content {
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid $color-wgrey;
+        padding: 16px;
+    }
+
+    .prices-services__title--hidden-sm {
+        display: none;
+    }
+
+    .prices-services__repairs {
+        flex: 45%; 
+        
+    }
+    
+    .prices-services__price {
+        flex: 5%; 
+    }
+
+    .prices-services__time {
+        display: flex;
+        align-items: center;
+    }
+
+    .prices-services__time-and-button {
+        flex: 25%; 
+    }
+
+    .prices-services__timing {
+        flex: 25%;
+    }
+
+    .prices-info__description {
+        flex-basis: 60%;
+    }
+    
+    .prices-info {
+        padding: 24px 24px 50px 24px;
+    }
+
+
+    /* -------------------------FOOTER-------------------------- */
+
+    .footer__info {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px;
+        gap: 0;
+    }
+
+    .footer__info-text {
+        flex: 33.3%;
+    }
+
+    .footer__info-text:first-child {
+        text-align: left;
+    }
+    
+    .footer__info-text:last-child {
+        text-align: right;
+    }
+
+}

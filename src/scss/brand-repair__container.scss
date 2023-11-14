@@ -1,0 +1,155 @@
+
+
+    .service-software {
+        margin-top: 24px;
+        padding: 16px;
+        background: linear-gradient(to right, $color-background 0%, $color-white 98.61%);
+        border-top: 1px solid $color-wbgreen;
+    }
+
+    .service-software__title {
+        text-transform: uppercase;
+        color: $color-grey;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px; 
+    }
+
+    .brand-repair {
+        height: 102px;
+    }
+
+    .tech-repair {
+        height: 190px;
+    }
+
+    .prices-services {
+        height: 230px;
+    }
+
+
+    .brand-repair__slides {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 16px;
+        box-sizing: border-box;
+    }
+
+    .brand-repair__blurring {
+        position: fixed;
+        right: 0;
+        z-index: 2;
+        height: 72px;
+        width: 24px;
+        background: linear-gradient(270deg, $color-background 16.84%, rgba(248, 248, 248, 0.00) 100%);
+    }
+
+    .brand-repair__slide {
+        width: 240px;
+        min-width: 224px;
+        height: 72px;
+        border-radius: 6px;
+        border: 1px solid $color-wgrey;
+        background: $color-white;
+    }
+
+    .brand-repair__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .brand-repair__link {
+        background: url('../img/Buttons/go.svg');
+        width: 40px;
+        height: 40px;   
+    }
+
+    .brand-repair__link:hover {
+        transform: scale(0.95);
+        transition: transform 0.2s ease-in-out;
+        opacity: 0.5;
+    }
+
+    .slide-show-more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0 34px 24px;
+        background-color: $color-background;
+        display: none;
+    }
+
+    .slide-show-more__text {
+        font-family: "TT Lakes Medium", sans-serif;
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+        color: $color-black;
+        text-align: center;
+    }
+
+    /*     MEDIA 768px     */
+
+    @media (min-width: 768px) {
+
+        .service-software {
+            padding: 16px 0 16px 24px; 
+        }
+
+        .brand-repair,
+        .tech-repair,
+        .prices-services {
+            height: auto;
+        }
+
+        .brand-repair__slides {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 24px;
+            padding: 0 24px;
+            margin-top: 24px;
+            height: 160px;
+        }
+
+        .brand-repair__blurring {
+            display: none;
+        }
+
+        .brand-repair__slide {
+            width: 224px;
+            flex-shrink: 0;
+        }
+
+        .slide-show-more {
+            display: inline-block;
+        }
+
+        .swiper-pagination {
+            display: none;
+        }
+
+    }
+
+    /*     MEDIA 1120px     */
+
+    @media (min-width: 1120px) {
+
+        .service-software {
+            padding: 16px 0 16px 32px; 
+        }
+
+        .brand-repair__slides {
+            gap: 16px 32px;
+            margin-top: 40px;
+        }
+
+        .brand-repair__slide {
+            width: 240px;
+        }
+
+    }
+
+    
