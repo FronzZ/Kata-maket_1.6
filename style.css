@@ -902,6 +902,8 @@ body {
 .callback__title::before {
   content: '';
   background-image: url(./static/highlight.svg);
+  background-color: #41F6D7;
+  border-radius: 0 10px 10px 0;
   width: 4px;
   height: 40px;
   position: absolute;
@@ -1011,6 +1013,8 @@ body {
 .feedback__title::before {
   content: '';
   background-image: url(./static/highlight.svg);
+  background-color: #41F6D7;
+  border-radius: 0 10px 10px 0;
   width: 4px;
   height: 40px;
   position: absolute;
